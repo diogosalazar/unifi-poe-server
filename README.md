@@ -31,9 +31,9 @@ Set up these variables on your system prior to starting the server:
 
 ```bash
 # Set up environment variables
-UNIFI_CONTROLLER_USERNAME=admin-username
-UNIFI_CONTROLLER_PASSWORD=password
-UNIFI_CONTROLLER_URL=https://controller-url
+UNIFI_POE_USERNAME=admin-username
+UNIFI_POE_PASSWORD=password
+UNIFI_POE_URL=https://controller-url
 
 # Start the server
 unifi-poe-server
