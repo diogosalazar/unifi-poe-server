@@ -1,5 +1,5 @@
 const { Controller } = require('unifi-client')
-const controllerCredentials = require('./credentials.json')
+const controllerCredentials = require('./credentials')
 
 const POE_MODES = {
   OFF: 'off',
@@ -10,7 +10,7 @@ let _initializedController = null
 
 async function getController() {
   if(!_initializedController) {
-    if(!controllerCredentials && !controllerCredentials.url) {
+    if(!controllerCredentials || !controllerCredentials.url) {
       throw new Error('Invalid credentials')
     }
     const controller = new Controller({

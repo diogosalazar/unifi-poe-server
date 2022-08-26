@@ -3,7 +3,12 @@
  * and replace the values for username, password and url
  * for the target controller
  */
-const jsonCredentials = require('./credentials.json')
+let jsonCredentials
+try {
+  jsonCredentials = require('./credentials.json')
+} catch(err) {
+  /* Quietly fail if file doesn't exist */
+}
 
 /**
  * Alternatively, define username, password and url
