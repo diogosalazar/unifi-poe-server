@@ -48,13 +48,13 @@ A successful POST request to set a new PoE mode will return a JSON object indica
 Example for successful request setting a new PoE mode:
 ```json
 {
-  success: true,
+  "success": true,
 }
 ```
 
 Example for failed request setting a new PoE mode:
 ```json
 {
-  error: "Invalid credentials",
+  "error": "Invalid credentials",
 }
 ```
