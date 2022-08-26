@@ -81,7 +81,7 @@ Start the server by running at the root of the `unifi-poe-server` folder:
 
 ```bash
 # start the server
-node index.js
+node .
 ```
 The server should start at `http://localhost:3000`.
 
