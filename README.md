@@ -6,9 +6,24 @@ It just works!
 ## Starting the server
 
 Clone this repository and configure your controller credentials.
-Run at the root of the `unifi-poe-server` folder:
 
 ```bash
+# Clone the repository
+git clone https://github.com/diogosalazar/unifi-poe-server.git
+
+# Change into the cloned directory
+cd unifi-poe-server
+
+# Install dependencies
+npm install
+# or if using Yarn
+yarn install
+```
+
+Start the server by running at the root of the `unifi-poe-server` folder:
+
+```bash
+# start the server
 node index.js
 ```
 The server should start at `http://localhost:3000`.
