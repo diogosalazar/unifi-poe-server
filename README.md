@@ -3,7 +3,23 @@
 Express server that exposes control of PoE ports on compatible Unifi devices via REST API.
 It just works!
 
-## Starting the server
+## Installation
+
+Have node installed on your system as a prerequisite
+
+```bash
+# Install the server globally
+npm install -g diogosalazar/unifi-poe-server
+```
+
+Start the server by running from a command prompt or terminal:
+
+```bash
+# start the server
+unifi-poe-server
+```
+
+## Starting the server from source
 
 Clone this repository and configure your controller credentials.
 
@@ -16,8 +32,6 @@ cd unifi-poe-server
 
 # Install dependencies
 npm install
-# or if using Yarn
-yarn install
 ```
 
 Start the server by running at the root of the `unifi-poe-server` folder:
