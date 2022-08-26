@@ -1,7 +1,10 @@
 {
   "name": "unifi-poe-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "bin": {
+    "unifi-poe-server": "bin/index.js"
+  },
   "author": "diogosalazar <daq.malazasam@gmail.com>",
   "license": "MIT",
   "dependencies": {
