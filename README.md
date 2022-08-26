@@ -12,12 +12,56 @@ Have node installed on your system as a prerequisite
 npm install -g diogosalazar/unifi-poe-server
 ```
 
+Set up controller credentials
+
 Start the server by running from a command prompt or terminal:
 
 ```bash
 # start the server
 unifi-poe-server
 ```
+
+## Controller Credentials
+
+For PoE port mode control to work an admin account must be created and its credentials passed to the `unifi-poe-server`
+
+### Via Environment Variables
+
+Set up these variables on your system prior to starting the server:
+
+```bash
+# Set up environment variables
+UNIFI_CONTROLLER_USERNAME=admin-username
+UNIFI_CONTROLLER_PASSWORD=password
+UNIFI_CONTROLLER_URL=https://controller-url
+
+# Start the server
+unifi-poe-server
+```
+
+Or save them in a `.env` file to the root directory of this project if running from source
+
+### Via JSON file
+
+Create a credentials file with log-in information for the target controller:
+
+```json
+// my-controller-credentials.json
+{
+  "username": "<admin username>",
+  "password": "<admin password>",
+  "url": "https://<unifi controller url>"
+}
+```
+
+Pass it to `unifi-poe-server` command
+
+```bash
+# Start the server
+unifi-poe-server my-controller-credentials.json
+```
+
+Or save it to the root directory of this project as `credentials.json` if running from source
 
 ## Starting the server from source
 
