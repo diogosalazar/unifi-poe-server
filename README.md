@@ -46,7 +46,6 @@ Or save them in a `.env` file to the root directory of this project if running f
 Create a credentials file with log-in information for the target controller:
 
 ```json
-// my-controller-credentials.json
 {
   "username": "<admin username>",
   "password": "<admin password>",
